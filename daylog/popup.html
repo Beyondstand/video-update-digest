@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>浏览日报</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header class="page-header"><div><p class="eyebrow">视频更新速递 · 浏览记录</p><h1>浏览日报</h1><p class="muted">把当天的浏览记录整理成可查看、导出和发送的日报。</p></div><nav class="header-actions" aria-label="配置入口"><button id="open-api" class="ghost">API 管理</button><button id="open-mail" class="ghost">邮箱配置</button><button id="open-options" class="primary">日报设置</button></nav></header>
+<p class="notice">仅能总结实际获得的资料：安装后访问且允许采集的网页可包含正文摘录；旧历史记录通常只有标题和 URL，不会自动重新打开每条历史网页。没有正文时不能视为已经读过页面内容。</p>
+<main class="dashboard"><aside>
+<section class="card"><div class="stat-row"><div><div id="today-pages" class="num">–</div><div class="muted">今日已捕获页面</div></div><strong id="today-key-short">–</strong></div><p id="capture-state" class="hint"></p><p id="auto-state" class="hint"></p><p id="email-state" class="hint"></p><div class="actions"><button id="gen-today" class="primary">生成今天日报</button><button id="gen-yesterday" class="ghost">生成昨天日报</button></div><div id="status" class="status hidden" role="status" aria-live="polite"></div></section>
+<section class="card"><h2>历史日报</h2><div id="log-list" class="log-list" aria-label="日报列表"><p class="empty">正在读取…</p></div></section><p class="hint side-note">超过设置页数或输入预算时会抽样、缩短摘录。日报会标明进入总结的记录数；生成时清理约 90 天之前的数据。</p>
+</aside><section id="viewer" class="card viewer" aria-label="日报预览"><div class="viewer-head"><div><h2 id="viewer-title">报告预览</h2><p id="viewer-meta" class="hint"></p></div><button id="close-viewer" class="text-button hidden">关闭预览</button></div><div id="viewer-actions" class="viewer-actions hidden"><button id="copy-log" class="ghost small">复制</button><button id="download-log" class="ghost small">导出 .md</button><button id="send-mail" class="primary small">发送到邮箱</button></div><p id="viewer-mail-status" class="hint"></p><div id="viewer-body" class="md"><p class="empty">选择左侧日期查看日报，或先生成一份。</p></div></section></main>
+<script src="popup.js"></script></body></html>

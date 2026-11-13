@@ -1,0 +1,10 @@
+# 构建工具链（打包用，不入库；重打包时复用 mobile-toolchain/）
+mobile-toolchain/
+mobile/app/build/
+mobile/.gradle/
+mobile/local.properties
+*.zip
+*.apk
+# 运行时数据
+node_modules/
+*.log

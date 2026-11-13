@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "视频更新速递（B站/抖音）",
+  "version": "1.4.0",
+  "description": "监控视频更新并总结每日浏览记录；统一管理模型 API，可选将视频报告和浏览日报发送到自己的邮箱。",
+  "permissions": [
+    "alarms",
+    "storage",
+    "tabs",
+    "scripting",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "history"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker.mjs",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "B站更新速递"
+  },
+  "minimum_chrome_version": "120",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'; img-src 'self' data:;"
+  },
+  "options_page": "keydock/options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "daylog/content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
