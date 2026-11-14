@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>视频更新速递 · 小白使用说明</title>
+<style>
+  body { font-family: "Microsoft YaHei", "SimHei", sans-serif; color: #374151; line-height: 1.8; margin: 40px; }
+  h1 { color: #3D9F3C; font-size: 26px; border-bottom: 3px solid #3D9F3C; padding-bottom: 8px; }
+  h2 { color: #367DB0; font-size: 18px; margin-top: 28px; border-left: 5px solid #3D9F3C; padding-left: 10px; }
+  .tip { background: #F3FBF2; border: 1px solid #D1D5DB; border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
+  .warn { background: #FFF7E6; border: 1px solid #E8C36A; border-radius: 8px; padding: 10px 14px; margin: 10px 0; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+  th, td { border: 1px solid #D1D5DB; padding: 8px 10px; font-size: 13px; text-align: left; }
+  th { background: #9ED17B; color: #222; }
+  code { background: #F3FBF2; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+  li { margin: 6px 0; }
+  .foot { color: #6B7280; font-size: 11px; margin-top: 36px; border-top: 1px solid #D1D5DB; padding-top: 12px; }
+</style>
+</head>
+<body>
+
+<h1>视频更新速递 · 小白使用说明</h1>
+<p>一句话介绍：它会自动盯着 B 站作者的新视频，帮你把视频<b>总结成一封邮件</b>发到你邮箱——不用你看完视频。</p>
+
+<h2>第一步：安装</h2>
+<ol>
+  <li>手机打开下载页（GitHub 的 Releases），下载 <code>app-release-v1.0.apk</code>。</li>
+  <li>点击安装。手机若提示「禁止安装未知应用」，点<b>设置 → 允许来自此来源</b>，再装一次。</li>
+  <li>装好后打开 App，图标是一个看书的小人。</li>
+</ol>
+
+<h2>第二步：登录 B 站（必做）</h2>
+<ol>
+  <li>点「打开 bilibili 登录」按钮，在弹出的网页里<b>扫码或账号登录</b>。</li>
+  <li>登录完点「完成」。提示「登录态已保存」就成功了。</li>
+</ol>
+<div class="tip">为什么要登录？App 需要读取你关注作者的视频列表。登录信息只保存在你自己的手机里。</div>
+
+<h2>第三步：填 3 组配置</h2>
+<table>
+  <tr><th>填什么</th><th>去哪里拿</th><th>示例</th></tr>
+  <tr><td>B 站作者 UID</td><td>电脑打开作者空间，网址里那串数字</td><td>98639326</td></tr>
+  <tr><td>模型 API + 模型 ID + Key</td><td>你用的 AI 服务商（如 OpenAI 兼容平台）的控制台</td><td>https://api.example.com/v1</td></tr>
+  <tr><td>收件邮箱 / 发件邮箱 / SMTP 授权码</td><td>邮箱设置里开启 SMTP，生成<b>授权码</b>（不是登录密码）</td><td>163 邮箱 → smtp.163.com</td></tr>
+</table>
+<div class="warn">SMTP 授权码不是邮箱密码！163/QQ 邮箱要在「设置 → POP3/SMTP」里单独开启并生成。</div>
+
+<h2>第四步：点「立即检查更新」</h2>
+<ol>
+  <li>先点「保存配置」。</li>
+  <li>再点「立即检查更新」，下方日志会一行行显示进度。</li>
+  <li>看到「邮件已发送」就去邮箱查收吧！</li>
+</ol>
+
+<h2>可选功能</h2>
+<ul>
+  <li><b>生成图文讲解页</b>：「运行」卡片里的开关。开启后每封邮件多附一份 <code>lecture.html</code> 图文讲解（手机/电脑浏览器直接打开看）。开关自动保存。</li>
+  <li><b>加密保存</b>：点「设置保管密码」，模型 Key 和邮箱授权码会加密存在手机里；重启 App 点「解锁恢复 Key」就不用重填。</li>
+</ul>
+
+<h2>常见问题</h2>
+<table>
+  <tr><th>问题</th><th>解决办法</th></tr>
+  <tr><td>提示「接口返回异常」</td><td>多半是没登录 B 站，重做第二步</td></tr>
+  <tr><td>提示「模型 API 返回 HTTP 401」</td><td>Key 填错了，重新复制完整 Key</td></tr>
+  <tr><td>提示「SMTP 认证失败」</td><td>用的是邮箱登录密码？改用 SMTP 授权码</td></tr>
+  <tr><td>日志说「无新视频」</td><td>正常！说明该作者还没发新视频</td></tr>
+  <tr><td>邮件说「字幕与文字版均不可用」</td><td>正常，该视频没字幕；总结基于视频简介，细节可能不全</td></tr>
+</table>
+
+<div class="foot">视频更新速递 Android 版 v1.0 · 开源项目 github.com/Beyondstand/video-update-digest · 薄荷曼波 Mint Mambo 配色</div>
+
+</body>
+</html>
