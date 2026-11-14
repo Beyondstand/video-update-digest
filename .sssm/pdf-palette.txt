@@ -1,0 +1,124 @@
+ORIGIN LAB · 
+
+ Origin 
+
+Origin  Origin 
+ Origin 
+Nature  XRD
+
+Origin  HEX  RGB 
+
+Origin 2021+  HEX  2018/2019 R, G, B 
+
+    HEX      Origin RGB                
+
+    #3D9F3C  R: 61, G: 159, B: 60   
+                                    
+
+    #9ED17B  R: 158, G: 209, B:     
+                         123        
+
+    #367DB0  R: 54, G: 125, B: 176  /
+                                    
+
+    #9DC7DD  R: 157, G: 199, B:     XRD/
+                         221        
+
+    #D1D5DB  R: 209, G: 213, B:     Blank/Control 
+                         219        
+
+Origin  3 
+
+                                             1Origin 
+
+  Origin 
+
+Custom... RGB  HEX  (Add to Custom
+Colors)
+ Origin  5 
+ 1XRD /  / 
+
+ 4~8  XRDRamanFTIR
+
+
+
+ (Group) (Increment List) 
+
+1. LineStack Lines by Y Offsets Y 
+2. Plot Details
+3. 
+4. GroupLine Color
+5. ... 4 
+6. ApplyOrigin 
+
+                 2Origin XRD / 
+
+ 
+
+  · Blank/Pristine#367DB0#9DC7DD
+  · /#9ED17B#3D9F3C
+  ·  Champion #3D9F3C
+ 2 + 
+
+Bar PlotBox Plot Origin 
+
+
+ A Ctrl 
+
+Origin 
+· CtrlControl Plot Details 
+
+·  (#D1D5DB) 3
+
+
+ B (Border) 0.5~0.75 pt
+
+None
+
+· Pattern/Border Color#4B5563 
+#6B7280 0.5 pt
+· 
+
+                     3 4 
+
+ Origin Error Bar
+
+  
+  1. Color#374151
+  2. Width 1.0 pt
+  3. Cap Width 3 ~ 4 pt
+ 3 / 3D  (Colormap)
+
+HeatmapXRD Contour 3D 
+ColormapFillLimited Levels
+#F3FBF2 / RGB: 243, 251, 242#519D78 / RGB: 81, 157, 120
+4~6 
+
+ Origin  (.otp) 1 
+
+
+1. 
+
+  · 1.0 ~ 1.5 pt#374151
+  ·  Arial  Calibri Times New Roman 10 pt 9 pt
+  · 
+2. FileSave Template As......
+3. UserDefinedNature_MintMambo
+4. 1 
+
+Origin 
+
+ Origin  Word  96 DPI
+· FileExport GraphOpen Dialog...
+· TIFFPDFEPS
+· DPI300 DPI600 DPI
+· Color 24-bit RGB
+
+ Origin 
+
+  ----
+  · 4 
+  · #D1D5DB
+  ·  0.5pt 
+  ·  .otp 
+

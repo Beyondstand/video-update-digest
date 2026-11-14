@@ -1,1 +1,9 @@
-<resources><style name="Theme.Videodigest" parent="Theme.AppCompat.DayNight.DarkActionBar"/></resources>
+<resources>
+  <style name="Theme.Videodigest" parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="colorPrimary">#3D9F3C</item>
+    <item name="colorPrimaryDark">#519D78</item>
+    <item name="colorAccent">#367DB0</item>
+    <item name="android:windowBackground">#F3FBF2</item>
+    <item name="android:statusBarColor">#519D78</item>
+  </style>
+</resources>
