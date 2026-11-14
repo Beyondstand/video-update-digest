@@ -174,6 +174,16 @@ class MainActivity : Activity() {
         // —— 操作区 ——
         val card4 = card()
         section(card4, "运行")
+        card4.addView(android.widget.Switch(this).apply {
+            text = "生成图文讲解页（lecture.html 随邮件发送）"
+            textSize = 13f; setTextColor(inkGray)
+            isChecked = cfg.getString("lecture", "false") == "true"
+            setPadding(0, 0, 0, dp(6))
+            setOnCheckedChangeListener { _, checked ->
+                cfg.edit().putString("lecture", if (checked) "true" else "false").apply()
+                Toast.makeText(this@MainActivity, if (checked) "已开启讲解页（已自动保存）" else "已关闭讲解页（已自动保存）", Toast.LENGTH_SHORT).show()
+            }
+        })
         card4.addView(button("保存配置", true) {
             cfg.edit()
                 .putString("uid", uid.text.toString().trim())
