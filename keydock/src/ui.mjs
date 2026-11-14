@@ -35,7 +35,7 @@ function button(label, className, iconName, action) {
 }
 
 document.querySelector('#app').innerHTML = `
-  <header><div class="brandmark" data-icon="key"></div><div class="brand">KeyDock<small>视频更新速递 · API 管理</small></div><div class="header-spacer"></div><button id="expand" class="icon-button" aria-label="打开完整管理页" title="打开完整管理页" data-icon="expand"></button><span class="version">v1.4</span></header>
+  <header><div class="brandmark" data-icon="key"></div><div class="brand">KeyDock<small>知了 Reelize · API 管理</small></div><div class="header-spacer"></div><button id="expand" class="icon-button" aria-label="打开完整管理页" title="打开完整管理页" data-icon="expand"></button><span class="version">v1.4</span></header>
   <div class="eyebrow">A LITTLE ORDER, EVERY DAY</div><h1>每一天，密钥就位。</h1><p class="intro">把各个平台的 API Key，收进一个安静的角落。</p>
   <div class="privacy-chip"><span data-icon="shield"></span>个人 Key 默认仅存会话 · 可选加密存本机 · 无云同步</div>
   <div class="stats"><div class="stat"><b id="total">0</b><span>管理平台</span></div><div class="stat"><b id="ready-count">0</b><span>本次会话有 Key</span></div><div class="stat"><b id="auto-count">0</b><span>已开启自动读取</span></div></div>

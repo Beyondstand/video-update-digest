@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "视频更新速递（B站/抖音）",
+  "name": "知了 Reelize（视频更新速递）",
   "version": "1.4.0",
-  "description": "监控视频更新并总结每日浏览记录；统一管理模型 API，可选将视频报告和浏览日报发送到自己的邮箱。",
+  "description": "知了 Reelize：视频更新自动总结速递——监控 B 站/抖音更新，模型总结与速评，邮件送达",
   "permissions": [
     "alarms",
     "storage",
@@ -21,7 +21,7 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_title": "B站更新速递"
+    "default_title": "知了 Reelize"
   },
   "minimum_chrome_version": "120",
   "content_security_policy": {

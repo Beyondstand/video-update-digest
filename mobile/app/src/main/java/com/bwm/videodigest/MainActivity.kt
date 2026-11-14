@@ -77,10 +77,10 @@ class MainActivity : Activity() {
             background = GradientDrawable(GradientDrawable.Orientation.LEFT_RIGHT, intArrayOf(deepGreen, gradientEnd)).apply { cornerRadius = 16f * resources.displayMetrics.density }
             setPadding(dp(20), dp(18), dp(20), dp(18))
             addView(TextView(this@MainActivity).apply {
-                text = "视频更新速递"; textSize = 22f; setTypeface(typeface, Typeface.BOLD); setTextColor(Color.WHITE)
+                text = "知了 Reelize"; textSize = 22f; setTypeface(typeface, Typeface.BOLD); setTextColor(Color.WHITE)
             })
             addView(TextView(this@MainActivity).apply {
-                text = "Mint Mambo · B 站视频监控总结"; textSize = 12f; setTextColor(Color.WHITE); alpha = 0.85f
+                text = "视频更新自动总结速递"; textSize = 12f; setTextColor(Color.WHITE); alpha = 0.85f
             })
         }, LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT).apply { setMargins(0, 0, 0, dp(16)) })
 

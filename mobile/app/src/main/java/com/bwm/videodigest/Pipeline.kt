@@ -128,7 +128,7 @@ $material"""
         return """<!DOCTYPE html><html><head><meta charset="UTF-8"></head><body style="margin:0;background:#f5f6f8;padding:18px 8px;">
 <div style="font-family:'Microsoft YaHei',sans-serif;max-width:760px;">
 <div style="background:#0b3d66;color:#fff;border-radius:10px;padding:14px 18px;">
-<div style="font-size:12px;opacity:.85;">视频更新速递 · 总结与评价</div>
+<div style="font-size:12px;opacity:.85;">知了 Reelize · 总结与评价</div>
 <div style="font-size:16px;font-weight:bold;margin-top:6px;">${esc(owner)} ·《${esc(title)}》</div>
 <div style="font-size:12px;opacity:.85;margin-top:4px;">时长 ${duration / 60}:${(duration % 60).toString().padStart(2, '0')}　·　$bvid</div></div>
 <div style="background:#fff;border-radius:10px;padding:16px 18px;margin-top:14px;">
@@ -141,7 +141,7 @@ $material"""
 <div style="font-size:13.5px;line-height:1.95;">${out.optString("reportHtml")}</div></div>
 <p style="font-size:12px;color:#999;line-height:1.8;">${esc(note)}${if (lectureAttached) "　·　图文讲解页已附在附件 lecture.html，浏览器打开即可阅读。" else ""}<br>
 视频链接：<a href="https://www.bilibili.com/video/$bvid/">https://www.bilibili.com/video/$bvid/</a><br>
-本邮件由「视频更新速递」Android 版生成</p>
+本邮件由「知了 Reelize」生成</p>
 </div></body></html>"""
     }
 
@@ -183,7 +183,7 @@ $material"""
 <body><div class="wrap">
   <header><h1>${esc(lecture.optString("title"))}</h1><div class="sub">${esc(lecture.optString("subtitle"))}</div></header>
   <nav class="toc">$toc</nav>
-  $body<footer>${esc(title)} · 讲解页由「视频更新速递」Android 版生成 · $owner</footer>
+  $body<footer>${esc(title)} · 讲解页由「知了 Reelize」生成 · $owner</footer>
 </div></body></html>"""
     }
 }

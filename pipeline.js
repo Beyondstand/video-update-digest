@@ -990,7 +990,7 @@ function buildMailBody(meta, modelOut) {
   <p style="font-size:12px;color:#999;line-height:1.8;">
     ${escapeHtml(meta.sourceNote || "")}<br>
     视频链接：<a href="${escapeHtml(meta.url)}">${escapeHtml(meta.url)}</a><br>
-    本邮件由「视频更新速递」Edge 扩展生成
+    本邮件由「知了 Reelize」Edge 扩展生成
   </p>
 </div></body></html>`;
 }
